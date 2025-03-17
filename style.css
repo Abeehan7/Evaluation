@@ -31,7 +31,7 @@ h1 {
     justify-content: space-between;
 
     font-size: small;
-    padding: 50px;
+    padding: 30px;
 }
 
 
@@ -69,19 +69,21 @@ a:hover {
 }
 
 .part-2>img {
-    width: 600px;
+    width: 100%;
 }
 
 .head1 {
-    width: 650px;
+    width: 90%;
 }
 
 .head2 {
-    width: 400px;
+    width: 90%;
+    /* width: 350px; */
 }
 
 .part {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -89,6 +91,11 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    flex: 1;
+}
+
+.part-2 {
+    flex: 1;
 }
 
 .button1 {
@@ -112,7 +119,7 @@ a:hover {
 .button2 {
     display: flex;
     justify-content: center;
-
+    flex-wrap: wrap;
 }
 
 .button3 {
@@ -143,7 +150,7 @@ a:hover {
 }
 
 .text1 {
-    width: 500px;
+    width: 100%;
 }
 
 .sec1 {
@@ -152,12 +159,16 @@ a:hover {
 }
 
 .image2>img {
-    width: 600px;
+    width: 100%;
+}
+
+.image3>img {
+    width: 100%;
 }
 
 .thousands {
-    margin: 20px;
-    width: 500px;
+    margin: 40px;
+    width: 100%;
 }
 
 .know>.button1 {
@@ -194,72 +205,106 @@ a:hover {
     align-items: center;
 }
 
-.stars{
+.stars {
     display: flex;
 }
 
-.user{
+.user {
     display: flex;
     align-items: center;
     gap: 50px;
 }
 
-.box{
+.userImage>img {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.box {
     display: flex;
     border: 1px solid white;
     box-shadow: rgba(0, 0, 0, 0.225) 0px 2px 2px 1px;
     border-radius: 21px;
     align-items: center;
     gap: 40px;
+    padding: 20px;
 }
+
 /* sec 4 */
-.section-4{
-text-align: center;
-margin: 40px;
+.section-4 {
+    text-align: center;
+    margin: 40px;
+
 }
 
 
-.text5{
-    margin-bottom:50px ;
+.text5 {
+    margin-bottom: 50px;
 }
 
-.text5>h1{
-font-size: 40px;
+.text5>h1 {
+    font-size: 40px;
 }
 
-.boxes{
+.boxes {
     display: flex;
     justify-content: center;
-    gap: 80px;
-    
+    flex-wrap: wrap;
+    gap: 30px;
+
 }
 
-.phone,.email,.open,.address{
+.phone,
+.email,
+.open,
+.address {
     border: 2px solid rgb(226, 73, 149);
     border-radius: 6px;
-    width: 200px;
+    /* width: 50%; */
+    padding: 10px;
 }
 
-.footer{
+.footer {
     display: flex;
-    justify-content: space-between;
-    margin: 70px 150px;
-    margin-top: 250px;
+    justify-content: center;
+    gap: 40px;
+    /* margin: 40px 80px; */
+    margin-top: 150px;
+    margin-bottom: 40px;
 }
 
-.address2{
-    width: 150px;
+.foot2 {
+    display: flex;
+    gap: 40px;
+
 }
 
-@media(max-width: 800px) {
+
+.section-5 {
+    width: 100%;
+}
+
+
+@media(max-width: 600px) {
 
     .navbar {
-        align-items: end;
+        /* align-items: end; */
         padding: 30px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .head1 {
+        width: 450px;
+    }
+
+    .head2 {
+        width: 350px;
     }
 
     .section-1 {
-        padding: 20px 20px 0px 20px;
+        padding: 60px 40px 0px 40px;
     }
 
     .part {
@@ -280,15 +325,30 @@ font-size: 40px;
         width: 300px;
     }
 
-    .sec1{
+    .sec1 {
         flex-direction: column;
     }
 
-    .know{
+    .know {
         display: flex;
         justify-content: center;
     }
 
-    
-    
+    .sec2 {
+        flex-direction: column-reverse;
+        margin-bottom: 100px;
+    }
+
+    .boxes {
+        display: grid;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
 }
