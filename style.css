@@ -269,13 +269,14 @@ a:hover {
     justify-content: center;
     gap: 40px;
     /* margin: 40px 80px; */
-    margin-top: 150px;
-    margin-bottom: 40px;
+    margin: 150px 40px 40px 40px;
+    
 }
 
 .foot2 {
     display: flex;
-    gap: 40px;
+    gap: 30px;
+    flex-wrap: wrap;
 
 }
 
@@ -348,6 +349,7 @@ a:hover {
     .footer {
         flex-direction: column;
         text-align: center;
+        
     }
 
 
