@@ -275,10 +275,10 @@ a:hover {
 
 .foot2 {
     display: flex;
-    justify-content: centergit;
+    /* justify-content: center; */
     gap: 30px;
     flex-wrap: wrap;
-    text-align: center;
+    /* text-align: center; */
 
 }
 
@@ -350,7 +350,7 @@ a:hover {
 
     .footer {
         flex-direction: column;
-        text-align: center;
+        /* text-align: center; */
         
     }
 
